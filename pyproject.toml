@@ -1,0 +1,21 @@
+﻿[project]
+name = "ethercat-control"
+version = "0.1.0"
+description = "Simple EtherCAT servo controller wrapper built on PySOEM with CiA-402 helpers"
+readme = "README.md"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+license = "MIT"
+requires-python = ">=3.9"
+dependencies = [
+    "pysoem>=1.1.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
