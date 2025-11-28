@@ -1,4 +1,4 @@
-﻿[project]
+[project]
 name = "ethercat-control"
 version = "0.1.0"
 description = "Simple EtherCAT servo controller wrapper built on PySOEM with CiA-402 helpers"

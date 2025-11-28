@@ -1,0 +1,28 @@
+{
+  "description": "Sample setup for LC10E drive (edit interface/limits as needed)",
+  "network_interface": "Ethernet",
+  "cycle_time_ms": 10,
+  "servos": [
+    {
+      "name": "servo1",
+      "alias": 0,
+      "position": 0,
+      "esi": "ESI Example/LC10E V1.04.xml",
+      "mode": "pp",
+      "limits": {
+        "max_rpm": 3000,
+        "accel_rpm_s": 1000,
+        "decel_rpm_s": 1000,
+        "pos_min": -100000,
+        "pos_max": 100000
+      },
+      "homing": {
+        "method": 35,
+        "offset": 0,
+        "speed_fast": 500,
+        "speed_slow": 100,
+        "accel": 1000
+      }
+    }
+  ]
+}
